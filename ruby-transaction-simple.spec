@@ -1,7 +1,7 @@
 %define rname transaction-simple
 %define name ruby-%{rname}
 %define version 1.3.0
-%define release 1mdk
+%define release %mkrel 2
 
 Summary: Transaction::Simple object transactions
 Name: %{name}
@@ -10,14 +10,11 @@ Release: %{release}
 URL: http://trans-simple.rubyforge.org/
 Source0: %{rname}-%{version}.tar.bz2
 License: BSD-like
-Group: Development/Other
+Group: Development/Ruby
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby 
 BuildRequires: ruby-devel
 BuildArch: noarch
-
-%define ruby_libdir %(ruby -rrbconfig -e 'puts Config::CONFIG["sitelibdir"]')
-%define ruby_archdir %(ruby -rrbconfig -e 'puts Config::CONFIG["sitearchdir"]')
 
 %description
 Transaction::Simple provides a generic way to add active transaction support
@@ -44,6 +41,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%{ruby_libdir}/*
+%{ruby_sitelibdir}/*
 %doc Changelog Readme tests doc
 
