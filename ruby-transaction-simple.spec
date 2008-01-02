@@ -11,6 +11,7 @@ URL: http://trans-simple.rubyforge.org/
 Source0: %{rname}-%{version}.tar.bz2
 License: BSD-like
 Group: Development/Ruby
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby 
 BuildRequires: ruby-devel
 BuildArch: noarch
