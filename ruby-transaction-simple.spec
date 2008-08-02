@@ -1,7 +1,7 @@
 %define rname transaction-simple
 %define name ruby-%{rname}
 %define version 1.3.0
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: Transaction::Simple object transactions
 Name: %{name}
