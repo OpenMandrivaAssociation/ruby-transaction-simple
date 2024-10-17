@@ -7,7 +7,7 @@ Summary: Transaction::Simple object transactions
 Name: %{name}
 Version: %{version}
 Release: %{release}
-URL: http://trans-simple.rubyforge.org/
+URL: https://trans-simple.rubyforge.org/
 Source0: %{rname}-%{version}.tar.bz2
 License: BSD-like
 Group: Development/Ruby
